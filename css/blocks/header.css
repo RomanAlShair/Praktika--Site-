@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 1410px;
+  height: 116px;
+}
+.logo {
+  display: flex;
+  width: 66.04px;
+  height: 33.15px;
+  margin-left: 150px;
+}
+.menu {
+  margin: 50px;
+  font-family: "Maven Pro";
+  font-weight: 500;
+  font-size: 19px;
+  margin-left: 200px;
+  width: 403px;
+  height: 55px;
+}
+.headermenu {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.menu1 {
+  font-family: "Maven Pro";
+  font-weight: 500;
+  font-size: 10px;
+  color: #191c51;
+  width: 105px;
+  height: 37px;
+  margin-left: 60px;
+  border: 3px solid #191c51;
+  border-radius: 30px 0px 18px 30px;
+  line-height: 11px;
+  text-align: center;
+}
+.strelka {
+  display: flex;
+  margin-left: -10px;
+  width: 9px;
+}
+.palki {
+  width: 31px;
+  height: 24px;
+  margin-right: -85px;
+}
+.menu1strelka {
+  display: flex;
+  justify-content: space-evenly;
+}
