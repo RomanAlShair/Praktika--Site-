@@ -1,15 +1,7 @@
 body {
-  font-family: "Poppins", sans-serif;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 20px;
-  color: black;
-  font-weight: 400;
-  width: 100%;
-}
-.conteiner {
   max-width: 1440px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  font-family: sans-serif, "MavenPro", "Nunito", "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #595954;
 }
