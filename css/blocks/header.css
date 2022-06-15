@@ -12,6 +12,19 @@
   margin-top: 32px;
   margin-left: 110px;
 }
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-left: -45px;
+  z-index: 3;
+  border: 0;
+  background-color: #f7f6fe;
+  height: 32px;
+  width: 160px;
+}
+.logo:active {
+  margin-top: 15px;
+}
 .knopki {
   display: flex;
   justify-content: center;
