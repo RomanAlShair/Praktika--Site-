@@ -775,14 +775,31 @@ span {
   background: #ffffff;
   box-shadow: 4px 4px 20px rgba(231, 224, 224, 0.25);
   border-radius: 10px;
+  transition: 0.8s;
+}
+.block1:hover {
+  background-color: #fe3c51;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(0.3);
+  -ms-transform: scale(1.2);
+  transform: scale(1.1);
 }
 .block2 {
   display: flex;
   position: relative;
   width: 255px;
   height: 269px;
-  background: #fe3c51;
+  background: #ffffff;
+  box-shadow: 4px 4px 20px rgba(231, 224, 224, 0.25);
   border-radius: 10px;
+  transition: 0.8s;
+}
+.block2:hover {
+  background-color: #fe3c51;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(0.3);
+  -ms-transform: scale(1.2);
+  transform: scale(1.1);
 }
 .block3 {
   display: flex;
@@ -792,6 +809,14 @@ span {
   background: #ffffff;
   box-shadow: 4px 4px 20px rgba(231, 224, 224, 0.25);
   border-radius: 10px;
+  transition: 0.8s;
+}
+.block3:hover {
+  background-color: #fe3c51;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(0.3);
+  -ms-transform: scale(1.2);
+  transform: scale(1.1);
 }
 .block4 {
   display: flex;
@@ -801,6 +826,14 @@ span {
   background: #ffffff;
   box-shadow: 4px 4px 20px rgba(231, 224, 224, 0.25);
   border-radius: 10px;
+  transition: 0.8s;
+}
+.block4:hover {
+  background-color: #fe3c51;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(0.3);
+  -ms-transform: scale(1.2);
+  transform: scale(1.1);
 }
 .btxt1 {
   display: flex;
@@ -824,8 +857,9 @@ span {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  color: #ffffff;
+  color: #000000;
 }
+
 .ptxt1 {
   display: flex;
   position: relative;
@@ -848,7 +882,7 @@ span {
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
-  color: #ffffff;
+  color: #000000;
 }
 .bl1 {
   display: flex;
