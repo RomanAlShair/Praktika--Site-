@@ -137,10 +137,8 @@ footer {
   display: flex;
   justify-content: center;
   position: relative;
-  width: 1108px;
-  height: 0px;
-  border: 1px solid #ededed;
   margin-top: 10px;
+  margin-right: -350px;
 }
 .pend {
   display: flex;

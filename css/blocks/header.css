@@ -54,7 +54,7 @@
   width: 160px;
 }
 .knopkawork:active {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 .knopkasearch {
   display: flex;
@@ -69,7 +69,7 @@
   width: 50px;
 }
 .knopkasearch:active {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 .menu {
   display: flex;
@@ -88,19 +88,19 @@
 .menu:hover {
   content: " ";
   position: relative;
-  border: 2px solid rgb(247, 143, 143);
+
   font-weight: 1000;
 }
 .contact:hover {
   content: " ";
   position: relative;
-  border: 2px solid rgb(247, 143, 143);
+
   font-weight: 1000;
 }
 .services:hover {
   content: " ";
   position: relative;
-  border: 2px solid rgb(247, 143, 143);
+
   font-weight: 1000;
 }
 .services {
