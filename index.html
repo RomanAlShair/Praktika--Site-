@@ -4,276 +4,361 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/fonts/mavenpro/stylesheet.css" />
-    <link rel="stylesheet" href="css/fonts/nunito/stylesheet.css" />
-    <link rel="stylesheet" href="css/fonts/poppins/stylesheet.css" />
-    <link rel="stylesheet" href="css/fonts/rouge/stylesheet.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/blocks/header.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/blocks/main.css" />
-    <link rel="stylesheet" href="css/blocks/main2.css" />
-    <link rel="stylesheet" href="css/blocks/footer.css" />
-    <title>Praktika</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fonts/mavenpro/stylesheet.css" />
   </head>
-  <div class="shapka">
-  <body class="body">
-    <header class="header">
-        <div class="container">
-          <div class="logotipmain">
-            <a href="index.html" class="logo"><img src="images/logo.svg" alt=""></a>
-          </div>
-          <div class="knopki">
-            <div>
-              <a class="menu" href="">About</a>   
-            </div>
-            <a class="services" href="">Services</a>
-            <a class="contact" href="">Contact</a>
-          </div>
-            <button class="knopkawork">
-              <div class="work"></div>
-              <div class="menustrelka"></div>
-              <div class="menu1strelka">
-              <h2>Work</h2>
-              <img class="strelka" src="./images/strelka.svg" alt="" />
-            </div>
-            </button>
-          <button class="knopkasearch">
-            <div class="search">
-              <div class="searchone"></div>
-              <div class="searchtwo"></div>
-              <div class="searchthre"></div>
-            </div>
-          </button>
-        </div>
-      </div>
-    </header>
-    <div class="main1">
-      <div class="bu">
-        <div class="blocktake">
-          <h1 class="taketext">
-            Take your business to the <span> next level </span>
-          </h1>
-        </div>
-        <div class="blockwe">
-          <p class="wetext">We help Clients Realize their most important</p>
-          <p class="wetext2">business goals.</p>
-        </div>
-          <button class="free">
-          <p class="quote">Free Quote</p>
-          <img class="strelka2" src="./images/strelka.svg" alt="" />
+  <body style="background-color: rgba(255, 0, 157, 0.027)">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          data-bs-toggle="tooltip"
+          data-bs-placement="bottom"
+          title="Выборгский роддом"
+          type="button"
+          ><img style="width: 50px" src="/photo/logo.png" alt=""
+        /></a>
+        <audio src="звук.mp3" id="sss" preload="auto"></audio>
+        <span class="badge bg-danger text-dark" id="date-info"></span>
+        <script>
+          function scetchick() {
+            let d = new Date();
+            let ddd =
+              d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+            document.getElementById("date-info").innerHTML = ddd;
+            document.getElementById("sss").play();
+          }
+          setInterval(scetchick, 10000);
+        </script>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-      <div class="watch">
-        <img src="./images/watch.svg" alt="" />
-        <h1 class="watchtext">Watch</h1>
-      </div>
-      <div class="vector">
-        <img src="images/vector.svg" alt="">
-      </div>
-      </div>
-    </div>
-        <div class="containersphoto">
-          <div class="tetka"><img src="images/tetka.png" alt="" /></div>
-          <div class="rectangle25"></div>
-          <div class="krug"></div>
-          <div class="txtkrug">100% Job done</div>
-          <div class="tochka"></div>
-          <div class="tochka2"></div>
-          <div class="tochka3"></div>
-          <div class="folow"></div>
-          <div class="txtfolow">98%</div>
-          <div class="txtfolow2">satisfaction rate</div>
-          <div class="photofolow"></div>
-            <div class="phfolow"></div>
-            <div class="txtphfolow">+8</div>
-            <div class="phfolow1"><img src="images/Ellipse 9.png" /></div>
-            <div class="phfolow2"><img src="images/Ellipse 8.png" /></div>
-            <div class="phfolow3"><img src="images/Ellipse 7.png" /></div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <div class="knopki">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="/onas.html"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  title="О нас лол"
+                  type="button"
+                  >О нас</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="knopki">
+                <a
+                  class="nav-link"
+                  href="/mesto.html"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  title="Наш адрес"
+                  type="button"
+                  >Месторасположение</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="knopki">
+                <a
+                  class="nav-link"
+                  href="/obrat.html"
+                  tabindex="-1"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="bottom"
+                  title="Связаться с нами"
+                  type="button"
+                  aria-disabled="true"
+                  >Обратная связь</a
+                >
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <a href="login.html"
+              ><button
+                data-bs-placement="bottom"
+                title="Авторизация"
+                type="button"
+                class="btn btn-outline-danger me-2"
+              >
+                Вход
+              </button></a
+            >
+            <a href="reg.html"
+              ><button
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Регистрация"
+                type="button"
+                class="btn btn-outline-primary"
+              >
+                Регистрация
+              </button></a
+            >
+          </form>
         </div>
-      <div class="baner">
-        <img src="images/image 16.png" alt="" />
-        <img src="images/image 17.png" alt="" />
-        <img src="images/image 18.png" alt="" />
-        <img src="images/image 19.png" alt="" />
-        <img src="images/image 20.png" alt="" />
       </div>
-    <div class="main">
-      <div class="mph">
-        <div class="phki">
-          <img class="mainphoto1" src="images/Rectangle 15.png" alt="нету" />
-          <img class="mainphoto2" src="images/Subtract.png" alt="" />
-        <div class="wath">
-          <div class="watch2">Watch</div>
-          <div class="play2">
-          <div class="ply2"><img src="images/Polygon 1.png" /></div>
-        </div>
-        </div>
-        </div>
-          <div class="phtxt">
-          <div class="txtmain">About us</div>
-          <div class="txtmain1">We will help you grow your business</div>
-          <div class="txtmain2">
-            We provide all kinds of services. We like to work in a friendly way with
-            clients.Everyone on our team is experienced
+    </nav>
+    <br />
+    <br />
+
+    <div
+      style="margin-left: -13px"
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <!-- начало ряда -->
+            <div class="row">
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img src="/photo/1.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Родильный дом</h5>
+                    <p class="card-text">
+                      Ежедневно, круглосуточно Ленинградское ш., 24
+                    </p>
+                    <a
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      title="Зеркало"
+                      type="button"
+                      href="https://rd.vbglenobl.ru"
+                      class="btn btn-danger"
+                      >Официальный сайт</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img src="photo/2.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Родильный дом</h5>
+                    <p class="card-text">
+                      Ежедневно, круглосуточно Ленинградское ш., 24
+                    </p>
+                    <a
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      title="Зеркало"
+                      type="button"
+                      href="https://rd.vbglenobl.ru"
+                      class="btn btn-danger"
+                      >Официальный сайт</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img
+                    style="height: 215px"
+                    src="/photo/3.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Родильный дом</h5>
+                    <p class="card-text">
+                      Ежедневно, круглосуточно Ленинградское ш., 24
+                    </p>
+                    <a
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      title="Зеркало"
+                      type="button"
+                      href="https://rd.vbglenobl.ru"
+                      class="btn btn-danger"
+                      >Официальный сайт</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- конец ряда -->
           </div>
-          <div class="txtmain3">“Contact us to do something good together”</div>
-          <div class="txtmain4">-Jonh Smith</div>
-          <div class="txtmain5">Smith</div>
-          <div class="txtmain6">CEO</div>
         </div>
-    </div>
-      <div class="polos">
-        <div class="polos1"></div>
-        <div class="polos2"></div>
-        <div class="polos3"></div>
-      </div>
-      <div class="txtm78">
-        <div class="txtmain7">Our Services</div>
-        <div class="txtmain8">Which service do we provide?</div>
-      </div>
-    </div>
-    <div class="block-wrapper">
-      <div class="block1">
-        <div>
-          <div class="bl1"><img class="bf" src="images/Vector1.svg" alt="" height="19.33px" width="20px"></div>
-          <div class="btxt1">Website Development</div>
-          <div class="ptxt1">We work with our professional team. They design first and then development. They are very professional.</div>
-      </div>
-      </div>
-      <div class="block2">
-        <div>
-          <div class="bl1"><img class="bf" src="images/Vector2.svg" alt="" height="19.33px" width="20px"></div>
-          <div class="btxt2">Digital Marketing</div>
-          <div class="ptxt2">We work with our professional team. They will bring your customers in a very good way. They are very professional.</div>
+        <div class="carousel-item">
+          <div class="container">
+            <!-- начало ряда -->
+            <div class="row">
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img
+                    style="height: 215px"
+                    src="photo/4.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Родильный дом</h5>
+                    <p class="card-text">
+                      Ежедневно, круглосуточно Ленинградское ш., 24
+                    </p>
+                    <a
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      title="Зеркало"
+                      type="button"
+                      href="https://rd.vbglenobl.ru"
+                      class="btn btn-danger"
+                      >Официальный сайт</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img
+                    style="height: 215px"
+                    src="photo/5.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Родильный дом</h5>
+                    <p class="card-text">
+                      Ежедневно, круглосуточно Ленинградское ш., 24
+                    </p>
+                    <a
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      title="Зеркало"
+                      type="button"
+                      href="https://rd.vbglenobl.ru"
+                      class="btn btn-danger"
+                      >Официальный сайт</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img
+                    style="height: 215px"
+                    src="photo/6.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Родильный дом</h5>
+                    <p class="card-text">
+                      Ежедневно, круглосуточно Ленинградское ш., 24
+                    </p>
+                    <a
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      title="Зеркало"
+                      type="button"
+                      href="https://rd.vbglenobl.ru"
+                      class="btn btn-danger"
+                      >Официальный сайт</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- конец ряда -->
+          </div>
         </div>
       </div>
-      <div class="block3">
-        <div>
-          <div class="bl2"><img class="bf" src="images/Vector3.svg" alt="" height="19.33px" width="20px"></div>
-          <div class="btxt1">Ui Design</div>
-          <div class="ptxt1">We work with our professional team. They design first and then development. They are very professional.</div>
-        </div>
-      </div>
-      <div class="block4">
-        <div>
-          <div class="bl2"><img class="bf" src="images/Vector4.svg" alt="" height="19.33px" width="20px"></div>
-          <div class="btxt1">Website SEO</div>
-          <div class="ptxt1">We work with our professional team. They design first and then development. They are very professional.</div>
-        </div>
-      </div>
-    </div>
-    <div class="bordik">
-      <div class="bordtxt">Why Choose Us ?</div>
-      <div class="bordtxt1">Our team will give you good servicetime</div>
-      <div class="bordtxt2">
-        We provide all kinds of services. We like to work in a friendly way with
-        clients.Everyone on our team is experienced
-      </div>
-      <div class="phb">
-        <div class="phbord2"><img src="images/Subtract1.png" alt="" /></div>
-        <div class="bord1"></div>
-        <div class="phbord1"><img src="images/Rectangle130.png" alt="" /></div>
-        <div class="bord2"></div>
-        <div class="bord3"></div>
-        <div class="bord4"></div>
-        <div class="bord5"></div>
-        <div class="bord6"></div>
-        <div class="bord7"></div>
-      </div>
-    </div>
-    <div class="polosi">
-      <div class="polos4"></div>
-    </div>
-    <div class="maps">
-        <div class="txtm">
-          <div class="maptxt">Take Your Business to Next Level Right Now!</div>
-          <div class="maptxt1">Make the Right Choice for Your Future. Choose Onum!</div>
-        </div>
-        <button class="mapbuttom"><h1 class="mbt">Get Started</h1><img src="images/strelka.png" alt="" height="8px" width="10px"></button>
-        <div class="mapA">
-          <img class="mapA1" src="images/mapA1.png" alt="">
-          <img class="mapA2" src="images/mapA2.png" alt="">
-          <img class="mapA3" src="images/mapA3.png" alt="">
-          <img class="mapA4" src="images/mapA4.png" alt="">
-          <img class="mapA5" src="images/mapA5.png" alt="">
-          <img class="mapA6" src="images/mapA6.png" alt="">
-        </div>    
-      </div>
-    </div>
-    <div class="blogg">
-      <div class="blogt">
-        <div class="txtblog">Latest News</div>
-        <div class="txtblog1">Stay with Us to get updates</div>
-      </div>
-      <div class="blogp">
-        <div class="post1">
-          <div class="phpost1"><img src="images/Rectangle 17.png" alt="" /></div>
-          <div class="txtpost1">October 8, 2020</div>
-          <div class="txtpost11">Win a stay at The Allison Inn and Spa!</div>
-          <div class="txtpost12">ow extended through February 15th! I LOVE to hand keys to new .</div>
-        </div>
-        <div class="post2">
-          <div class="phpost2"><img src="images/Rectangle 18.png">
-          <div class="txtpost1">October 8, 2020</div>
-          <div class="txtpost11">Win a stay at The Allison Inn and Spa!</div>
-          <div class="txtpost12">ow extended through February 15th! I LOVE to hand keys to new .</div>
-        </div>
-        <div class="post3">
-          <div class="phpost3"><img src="images/Rectangle 19.png" alt="" /></div>
-          <div class="txtpost1">October 8, 2020</div>
-          <div class="txtpost11">Win a stay at The Allison Inn and Spa!</div>
-          <div class="txtpost12">ow extended through February 15th! I LOVE to hand keys to new .</div>
-        </div>
+      <div class="bg-danger">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
-    <div class="subscribetoour">
-      <div class="txts">Subscribe to our newsletter</div>
-      <input class="obr" placeholder="Enter your email...">
-          <button class="send"><div class="tsend">Send</div></button>
-    </input>
-    </div>
-    <div class="footer1">
-      <div class="f1bl">
-        <div class="logat">
-          <div class="logat1"></div>
-          <img class="logat2" src="images/ob.png" alt="" height="18.91px" width="39.94">
-        </div>
-        <p class="f1lbt">Gobo will give you Proper Business Solution</p>
-        <div class="f1bsoc">
-          <button class="f1b"><img class="f1bf" src="images/twitter.svg" alt="" height="10.11px" width="10.71px"></button>
-          <button class="f2b"><img class="f2bf" src="images/ggsa.svg" alt="" height="11px" width="8.24px"></button>
-          <button class="f1b"><img class="f1bf" src="images/Linkdin.svg" alt="" height="10px" width="10px"></button>
-          <button class="f1b"><img class="f1bf" src="images/Instragram.svg" alt="" height="11px" width="11px"></button>
-        </div>
+    <br />
+    <br />
+    <footer
+      style="margin-top: 450px; margin-right: 10px"
+      class="text-center text-white"
+    >
+      <div class="container pt-4">
+        <section class="mb-4">
+          <a href="index.html"
+            ><img
+              class="knopki"
+              src="photo/logo.png"
+              width="50px"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="О это мы"
+              type="button"
+              alt=""
+          /></a>
+
+          <a href="http://instagram.com">
+            <img
+              style="margin-left: 50px; margin-right: 50px"
+              class="knopki"
+              src="photo/inst.png"
+              width="50px"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Instagram"
+              type="button"
+              alt=""
+          /></a>
+
+          <a href="https://www.gosuslugi.ru"
+            ><img
+              class="knopki"
+              src="photo/gos.png"
+              width="50px"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title="Гос Услуги"
+              type="button"
+              alt=""
+          /></a>
+        </section>
       </div>
-      <div class="f1bl">
-        <h1 class="h1f">Products</h1>
-        <p class="p1f">Blog</p>
-        <p class="p1f">Help Center</p>
-        <p class="p1f">Contact</p>
-      </div>
-      <div class="f1bl">
-        <h1 class="h1f">Resources</h1>
-        <p class="p1f">FAQ'S</p>
-        <p class="p1f">Testimonial</p>
-        <p class="p1f">Terms & Conditions</p>
-      </div>
-      <div class="f1bl">
-        <h1 class="h1f">Contact Us</h1>
-        <div>
-          <div class="strimg"><img class="imgf" src="images/Phone.svg" alt="" width="9px" height="9px"><p class="p1f">+503.862.9075</p></div>
-          <div class="strimg"><img class="imgf" src="images/Gmail.svg" alt="" width="9px" height="6.3px"><p class="p1f">Support@gmail.com</p></div>
-        </div>  
-      </div>
-  </div>
-  <div class="brka"><img src="./images/brka.png" alt=""></div>
-  <p class="pend">© 2021 gobo,All Right reserved</p>
-  <div class="fpolos">
-    <div class="fpl1"></div>
-    <div class="poloska11">
-    <div class="fpl2"></div>
-  </div>
-</div>
-  </footer>      
+    </footer>
   </body>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
 </html>
